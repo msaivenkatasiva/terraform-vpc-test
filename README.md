@@ -22,12 +22,12 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | n/a | `map` | <pre>{<br/>  "Environment": "dev",<br/>  "Project": "Expense",<br/>  "Terraform": true<br/>}</pre> | no |
-| <a name="input_database_subnet_cidrs"></a> [database\_subnet\_cidrs](#input\_database\_subnet\_cidrs) | n/a | `list` | <pre>[<br/>  "10.0.21.0/24",<br/>  "10.0.22.0/24"<br/>]</pre> | no |
-| <a name="input_is_peering_required"></a> [is\_peering\_required](#input\_is\_peering\_required) | n/a | `bool` | `true` | no |
-| <a name="input_private_subnet_cidrs"></a> [private\_subnet\_cidrs](#input\_private\_subnet\_cidrs) | n/a | `list` | <pre>[<br/>  "10.0.11.0/24",<br/>  "10.0.12.0/24"<br/>]</pre> | no |
-| <a name="input_project_name"></a> [project\_name](#input\_project\_name) | n/a | `string` | `"expense"` | no |
-| <a name="input_public_subnet_cidrs"></a> [public\_subnet\_cidrs](#input\_public\_subnet\_cidrs) | n/a | `list` | <pre>[<br/>  "10.0.1.0/24",<br/>  "10.0.2.0/24"<br/>]</pre> | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Common tags applied to all resources | `map(string)` | <pre>{<br/>  "Environment": "dev",<br/>  "Project": "Expense",<br/>  "Terraform": "true"<br/>}</pre> | no |
+| <a name="input_database_subnet_cidrs"></a> [database\_subnet\_cidrs](#input\_database\_subnet\_cidrs) | List of CIDR blocks for database subnets | `list(string)` | <pre>[<br/>  "10.0.21.0/24",<br/>  "10.0.22.0/24"<br/>]</pre> | no |
+| <a name="input_is_peering_required"></a> [is\_peering\_required](#input\_is\_peering\_required) | Whether VPC peering should be created | `bool` | `true` | no |
+| <a name="input_private_subnet_cidrs"></a> [private\_subnet\_cidrs](#input\_private\_subnet\_cidrs) | List of CIDR blocks for private subnets | `list(string)` | <pre>[<br/>  "10.0.11.0/24",<br/>  "10.0.12.0/24"<br/>]</pre> | no |
+| <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Name of the project | `string` | `"expense"` | no |
+| <a name="input_public_subnet_cidrs"></a> [public\_subnet\_cidrs](#input\_public\_subnet\_cidrs) | List of CIDR blocks for public subnets | `list(string)` | <pre>[<br/>  "10.0.1.0/24",<br/>  "10.0.2.0/24"<br/>]</pre> | no |
 
 ## Outputs
 
